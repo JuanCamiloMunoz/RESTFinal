@@ -15,11 +15,12 @@ class Migration(migrations.Migration):
             name='Servicio',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('fechaI', models.TimeField()),
-                ('fechaF', models.TimeField()),
-                ('precio', models.CharField(max_length=50)),
-                ('demandante', models.CharField(max_length=50)),
-                ('oferente', models.CharField(max_length=50)),
+                ('precio' = models.CharField(max_length=50)),
+                ('fecha_inicio' = models.CharField(max_length=40)),
+                ('fecha_caduca'  = models.CharField(max_length=30)),
+                ('carro' = models.CharField(max_length=30)),
+                ('parqueadero' = models.CharField(max_length=30)),
+                ('oferente', models.CharField(max_length=30)),
             ],
         ),
     ]
